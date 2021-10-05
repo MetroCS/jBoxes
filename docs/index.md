@@ -1,8 +1,10 @@
-## Welcome to the JBoxes project
+# Welcome to the JBoxes project
 
-### Goal
+## Goal
 
 The main goal of the jBoxes software is to provide learners with a semantic model for a Java-like language—a detailed, concrete conceptual picture of how the computer behaves when it performs the instructions given to it in a program.
+
+## jBoxes Documentation
 
 ### jBoxes Book
 
@@ -16,7 +18,8 @@ The main goal of the jBoxes software is to provide learners with a semantic mode
 - [jBoxes Summary Sheets](jBoxesReferences/pdf/summary.pdf)
 
 
-#### Acknowledgements
+
+## Acknowledgements
 
 jBoxes is the brainchild of Dr. Gerald Shultz, Professor Emeritus at Metropolitan State University of Denver.
 
