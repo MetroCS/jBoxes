@@ -1,4 +1,4 @@
-# Welcome to the JBoxes project
+# Welcome to the jBoxes project
 
 ## Goal
 
