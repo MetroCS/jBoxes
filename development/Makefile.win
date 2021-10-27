@@ -1,0 +1,57 @@
+# Project: JBoxes2006A
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = translator.o box.o boxes.o chargridtype.o jbtoken.o Lesson.o MessageQueue.o mystring.o noteinfo.o portstype.o $(RES)
+LINKOBJ  = translator.o box.o boxes.o chargridtype.o jbtoken.o Lesson.o MessageQueue.o mystring.o noteinfo.o portstype.o $(RES)
+LIBS =  -L"d:/dev-cpp/lib" -lopengl32 -lglu32 -lglut32  
+INCS =  -I"d:/dev-cpp/include" 
+CXXINCS =  -I"d:/dev-cpp/lib/gcc/mingw32/3.4.2/include"  -I"d:/dev-cpp/include/c++/3.4.2/backward"  -I"d:/dev-cpp/include/c++/3.4.2/mingw32"  -I"d:/dev-cpp/include/c++/3.4.2"  -I"d:/dev-cpp/include" 
+BIN  = JBoxes2006A.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before JBoxes2006A.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "JBoxes2006A.exe" $(LIBS)
+
+translator.o: translator.cpp
+	$(CPP) -c translator.cpp -o translator.o $(CXXFLAGS)
+
+box.o: box.cpp
+	$(CPP) -c box.cpp -o box.o $(CXXFLAGS)
+
+boxes.o: boxes.cpp
+	$(CPP) -c boxes.cpp -o boxes.o $(CXXFLAGS)
+
+chargridtype.o: chargridtype.cpp
+	$(CPP) -c chargridtype.cpp -o chargridtype.o $(CXXFLAGS)
+
+jbtoken.o: jbtoken.cpp
+	$(CPP) -c jbtoken.cpp -o jbtoken.o $(CXXFLAGS)
+
+Lesson.o: Lesson.cpp
+	$(CPP) -c Lesson.cpp -o Lesson.o $(CXXFLAGS)
+
+MessageQueue.o: MessageQueue.cpp
+	$(CPP) -c MessageQueue.cpp -o MessageQueue.o $(CXXFLAGS)
+
+mystring.o: mystring.cpp
+	$(CPP) -c mystring.cpp -o mystring.o $(CXXFLAGS)
+
+noteinfo.o: noteinfo.cpp
+	$(CPP) -c noteinfo.cpp -o noteinfo.o $(CXXFLAGS)
+
+portstype.o: portstype.cpp
+	$(CPP) -c portstype.cpp -o portstype.o $(CXXFLAGS)
