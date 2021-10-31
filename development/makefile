@@ -44,3 +44,9 @@ portstype.o:  portstype.cpp
 translator.o: translator.cpp
 	gcc -c translator.cpp
 
+.PHONY: clean
+
+binaries=jboxes
+
+clean:
+	rm -f *.o $(binaries)
